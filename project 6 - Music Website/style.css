@@ -22,6 +22,8 @@ html, body{
     scroll-behavior: smooth;
 }
 
+
+/* navbar */
 .container{
     max-width: var(--max-width);
     margin: 0 auto;
@@ -38,6 +40,10 @@ a{
 
 header{
     background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav{
@@ -67,4 +73,29 @@ nav ul li:hover{
     font-size: 24px;
     font-weight: 700;
     color: white;
+}
+
+
+/* overview section */
+.overview{
+    height: 100vh;
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: center;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20%;
+}
+
+
+.overview h1{
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.overview p{
+    margin-top: 10px;
 }
