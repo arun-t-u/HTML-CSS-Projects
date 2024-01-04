@@ -6,7 +6,7 @@
     --purple600: #1b0058;
     --red600: #dc0000;
     --body: #f9f6ff;
-    --max-width: 1200px;
+    --max-width: 1300px;
 }
 
 *{
@@ -22,9 +22,12 @@ html, body{
     scroll-behavior: smooth;
 }
 
+
+/* navbar */
 .container{
     max-width: var(--max-width);
     margin: 0 auto;
+    padding: 10px;
 }
 
 ul{
@@ -36,8 +39,23 @@ a{
     color: white;
 }
 
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
 header{
     background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav{
@@ -66,5 +84,153 @@ nav ul li:hover{
 .logo{
     font-size: 24px;
     font-weight: 700;
+    color: white;
+}
+
+
+/* overview section */
+.overview{
+    height: 100vh;
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20%;
+}
+
+
+.overview h1{
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.overview p{
+    margin-top: 10px;
+}
+
+
+/* music container */
+.music-section{
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+    width: 80%;
+}
+
+.primary-btn{
+    background-color: var(--red600);
+    color: white;
+}
+
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+
+
+.about-section{
+    margin-top: 450px;
+}
+
+.about-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Video section */
+
+.video-section{
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.video-section .container{
+    text-align: center;
+    justify-content: center;
+    /* padding-top: 10%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -200px;
+}
+
+/* Gift card section */
+.gift-cards{
+    justify-content: center;
+    display: flex;
+    margin: 100px 0;
+    gap: 50px;
+
+}
+
+.gift-cards .container{
+    display: flex;
+    gap: 20px;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Footer section */
+
+.upper-footer{
+    background-color: var(--purple600);
+    padding: 20px;
+
+}
+
+.upper-footer .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-links{
+    color: white;
+}
+
+.upper-footer h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid wheat;
+    margin-bottom: 10px;
+}
+
+.lower-footer{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     color: white;
 }
