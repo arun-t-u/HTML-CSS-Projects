@@ -159,3 +159,26 @@ nav ul li:hover{
     text-align: center;
     align-items: center;
 }
+
+/* Video section */
+
+.video-section{
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.video-section .container{
+    text-align: center;
+    justify-content: center;
+    /* padding-top: 10%; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -200px;
+}
