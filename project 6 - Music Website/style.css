@@ -145,3 +145,17 @@ nav ul li:hover{
     background-color: var(--purple300);
     color: white;
 }
+
+
+.about-section{
+    margin-top: 450px;
+}
+
+.about-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
