@@ -202,3 +202,35 @@ nav ul li:hover{
     flex-direction: column;
     gap: 20px;
 }
+
+/* Footer section */
+
+.upper-footer{
+    background-color: var(--purple600);
+    padding: 20px;
+
+}
+
+.upper-footer .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-links{
+    color: white;
+}
+
+.upper-footer h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid wheat;
+    margin-bottom: 10px;
+}
+
+.lower-footer{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
