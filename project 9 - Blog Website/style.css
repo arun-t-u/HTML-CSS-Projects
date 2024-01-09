@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    /* box-shadow: 2px 2px 2px; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul li:hover{
+    border-bottom: rgb(255, 251, 0) 2px solid;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 10px;
+}
+
+#hero .left-side{
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#hero .left-side h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#hero .left-side h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #4a5568;
+}
+
+
+#hero .right-side img{
+    width: 100%;
+    height: auto;
+    border-radius: 65px;
+}
+
+.h-card{
+    padding: 50px;
+}
+
+.h-card .card{
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    box-shadow: 0px 5px 4px 0px rgba(221, 221, 221, 0.25);
+}
+
+.card .card-content{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card .card-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.card .card-content article{
+    color: #718096;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card .card-content .status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-content .status p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #718096;
+}
+
+.card .card-content .status a{
+    color: #2d3748;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.h-card .card .img-container img{
+    width: 100%;
+    height: 100%;
+    /* background-size: 100% 100%; */
+    /* background-image: url(images/long-card.png); */
+    /* background-repeat: no-repeat; */
+}
+
+.v-cards .card-containers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.v-cards .card-containers .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0 rgba(192, 189, 189, 025);
+}
+
+.v-cards .card-containers .card .card-content{
+    padding: 15px;
+}
+
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.see-more button{
+    width: 122px;
+    height: 37px;
+    background-color: #6B46c1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.see-more button:hover{
+    opacity: 0.8;
+}
+
+footer{
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+footer ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+footer ul li a{
+    font-size: 24px;
+    color: #000;
+}
+
+
+/* Post HTml */
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.banner .banner-image img{
+    width: 100%;
+    height: auto;
+}
+
+.banner h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.banner .about-author{
+    display: flex;
+    gap: 40px;
+}
+
+.banner .about-author h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.banner .about-author p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #718096;
+}
+
+.post hr{
+    margin-bottom: 40px;
+}
+
+.post article{
+    color: #718096;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post article h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.post article h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3748;
+}
