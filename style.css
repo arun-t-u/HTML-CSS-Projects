@@ -154,8 +154,7 @@ nav li:hover{
 #projects h2{
     font-size: 6rem;
     text-align: center;
-    margin: 2rem 0;
-    text-transform: uppercase;
+    padding: 2rem 0;
 }
 
 .project-container{
